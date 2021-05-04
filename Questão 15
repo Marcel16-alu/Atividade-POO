@@ -1,1 +1,41 @@
+package Questão15;
 
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Glicose {
+
+  public static void main(String[] args) {
+  Locale.setDefault(Locale.US);
+  Scanner sc = new Scanner(System.in);
+  
+ double valor, FundosdeRenda;
+ 
+ int poupança, rendaFixa, NovoValor, investimento;
+ 
+System.out.println("Os rendimentos disponiveis são, Poupança, cujo rendimento mensal é 3%, e Fundos de renda fixa, cujo rendimento mensal é 4%, para selecionar Poupança, aperte 1, para selecionar Fundos de renda fixa aperte 2");
+
+System.out.printIn("Digite o investimento: ");
+investimento =(1); 
+investimento = sc.nextInt();
+ 
+
+
+if (investimento == 1) {
+investimento = sc.nextInt();
+
+NovoValor = (investimento ++ %3);
+NovoValor = sc.nextInt();
+
+} else if (investimento == 2) {
+investimento = sc.nextInt();
+NovoValor = (investimento ++ %4);
+NovoValor = sc.nextInt();
+
+} else {
+System.out.print("Operação Inválida!");
+}
+sc.close();
+  }
+
+}
