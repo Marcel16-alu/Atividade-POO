@@ -1,1 +1,196 @@
+package TrabalhoPoo;
 
+import java.util.Locale;
+import java.util.Scanner;
+
+
+public class Questao23 {
+
+  public static void main(String[] args) {
+  
+  Locale.setDefault(Locale.US);
+  Scanner sc = new Scanner(System.in);
+  
+double codigo,preço,preçoTotal,desconto,preçoFinal;
+  int quantidade;
+  
+  System.out.print("Insira o codigo do produto: "); 
+  codigo = sc.nextDouble();
+  
+  if ((codigo==1) || (codigo<=10)&& (codigo > 0)) {
+   
+    preço = 10.00;
+    
+    System.out.print("Quantidade comprada: ");
+    quantidade = sc.nextInt();
+    
+    preçoTotal = preço * quantidade;
+    
+    System.out.print("Preço total: "+ preçoTotal);
+    
+    if ((preçoTotal>10.00) && (preçoTotal<=250.00)) {
+   
+   desconto= (5 * preçoTotal)/100;
+   
+   preçoFinal = preçoTotal-desconto;
+   
+   System.out.print("O preço final sera: "+preçoFinal);
+   
+  }
+ 
+  if ((preçoTotal>250.00) && (preçoTotal<=500)) {
+   
+   desconto = (10 * preçoTotal)/100;
+   
+   preçoFinal = preçoTotal-desconto;
+   
+   System.out.print("O preço final sera: "+preçoFinal);
+   
+  }
+    
+  if (preçoTotal>500.00) {
+   
+   desconto = (15 *preçoTotal)/100;
+   
+   preçoFinal = preçoTotal-desconto;
+   
+   System.out.print("O preço final sera: "+preçoFinal);
+   
+  }  
+    
+  }else if((codigo >=11) &&(codigo<=20)) {
+  
+    preço = 15.00;
+    
+    System.out.print("Quantidade comprada: ");
+    quantidade = sc.nextInt();
+    
+    preçoTotal = preço * quantidade;
+    
+    System.out.print("Preço total: "+ preçoTotal);
+    
+    if ((preçoTotal>10.00) && (preçoTotal<=250.00)) {
+   
+   desconto= (5 * preçoTotal)/100;
+   
+   preçoFinal = preçoTotal-desconto;
+   
+   System.out.print("O preço final sera: "+preçoFinal);
+   
+  }
+ 
+  if ((preçoTotal>250.00) && (preçoTotal<=500)) {
+   
+   desconto = (10 * preçoTotal)/100;
+   
+   preçoFinal = preçoTotal-desconto;
+   
+   System.out.print("O preço final sera: "+preçoFinal);
+   
+  }
+    
+  if (preçoTotal>500.00) {
+   
+   desconto = (15 *preçoTotal)/100;
+   
+   preçoFinal = preçoTotal-desconto;
+   
+   System.out.print("O preço final sera: "+preçoFinal);
+   
+  }   
+    
+  }else if ((codigo>=21) && (codigo<=30)) {
+  
+    preço = 20.00;
+    
+    System.out.print("Quantidade comprada: ");
+    quantidade = sc.nextInt();
+    
+    preçoTotal = preço * quantidade;
+    
+    System.out.print("Preço total: "+ preçoTotal);
+     
+    
+    if ((preçoTotal>10.00) && (preçoTotal<=250.00)) {
+   
+   desconto= (5 * preçoTotal)/100;
+   
+   preçoFinal = preçoTotal-desconto;
+   
+   System.out.print("O preço final sera: "+preçoFinal);
+   
+  }
+ 
+  if ((preçoTotal>250.00) && (preçoTotal<=500)) {
+   
+   desconto = (10 * preçoTotal)/100;
+   
+   preçoFinal = preçoTotal-desconto;
+   
+   System.out.print("O preço final sera: "+preçoFinal);
+   
+  }
+    
+  if (preçoTotal>500.00) {
+   
+   desconto = (15 *preçoTotal)/100;
+   
+   preçoFinal = preçoTotal-desconto;
+   
+   System.out.print("O preço final sera: "+preçoFinal);
+   
+  }  
+   
+  }else if ((codigo>=31) && (codigo<=40)) {
+  
+    preço = 30.00;
+    
+    System.out.print("Quantidade comprada: ");
+    quantidade = sc.nextInt();
+    
+    preçoTotal = preço * quantidade;
+    
+    System.out.print("Preço total: "+ preçoTotal); 
+         
+     
+    if ((preçoTotal>10.00) && (preçoTotal<=250.00)) {
+   
+   desconto= (5 * preçoTotal)/100;
+   
+   preçoFinal = preçoTotal-desconto;
+   
+   System.out.print("O preço final sera: "+preçoFinal);
+   
+  }
+ 
+  if ((preçoTotal>250.00) && (preçoTotal<=500)) {
+   
+   desconto = (10 * preçoTotal)/100;
+   
+   preçoFinal = preçoTotal-desconto;
+   
+   System.out.print("O preço final sera: "+preçoFinal);
+   
+  }
+    
+  if (preçoTotal>500.00) {
+   
+   desconto = (15 *preçoTotal)/100;
+   
+   preçoFinal = preçoTotal-desconto;
+   
+   System.out.print("O preço final sera: "+preçoFinal);
+   
+  }  
+      
+  }else {
+     System.out.println("ERRO: O codigo do produto é inválido.");
+  
+     System.out.println("Obs: São validos apenas codigos de 1 a 40");
+  }
+  
+    
+  
+   sc.close();
+  }
+}
