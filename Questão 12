@@ -1,0 +1,199 @@
+package AtividadesDoCurso;
+
+import java.util.Iterator;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Questão012 {
+
+	public static void main(String[] args) {
+	Locale.setDefault(Locale.US);
+	Scanner sc = new Scanner(System.in);
+	int i,numero,numero2,numero3,numero4,numero5,numero6,numero7,numero8,numero9,numero10;
+	int numDivisores,numDivisores2,numDivisores3,numDivisores4,numDivisores5;
+	int numDivisores6,numDivisores7,numDivisores8,numDivisores9,numDivisores10;
+	//numero 1
+	numDivisores = 0;
+	System.out.print("Digite um numero: ");
+	numero = sc.nextInt();
+	
+	for (i = 1; i <= 10000; i++) {
+	 
+	  if (numero % i == 0) {
+	  numDivisores = numDivisores + 1;
+	  } 
+	}//fim do for
+	
+	  if (numDivisores <= 2) {
+	  System.out.println("Primo");
+	  }else {
+	  System.out.println("Não é primo");	
+	  }
+	
+	//numero 2
+	numDivisores2 = 0;
+	System.out.print("Digite um numero: ");
+	numero2 = sc.nextInt();
+	
+	for (i = 1; i <= 10000; i++) {
+		
+	  if (numero2 % i == 0) {
+	  numDivisores2 = numDivisores2 + 1;
+	  } 
+	}//fim do for
+	
+	  if (numDivisores2 <= 2) {
+	  System.out.println("Primo");	
+	  }else {
+	  System.out.println("Não é primo");	
+	  }
+	  
+	//numero 3
+	numDivisores3 = 0;
+	System.out.print("Digite um numero: ");
+	numero3 = sc.nextInt();
+		
+	for (i = 1; i <= 10000; i++) {
+			
+	  if (numero3 % i == 0) {
+	  numDivisores3 = numDivisores3 + 1;
+	  } 
+	}//fim do for
+		
+	  if (numDivisores3 <= 2) {
+	  System.out.println("Primo");	
+	  }else {
+	  System.out.println("Não é primo");	
+	  }
+	
+	//numero 4
+	numDivisores4 = 0;
+	System.out.print("Digite um numero: ");
+	numero4 = sc.nextInt();
+			
+	for (i = 1; i <= 10000; i++) {
+				
+	  if (numero4 % i == 0) {
+	  numDivisores4 = numDivisores4 + 1;
+		  } 
+	}//fim do for
+			
+	  if (numDivisores4 <= 2) {
+	  System.out.println("Primo");	
+	  }else {
+	  System.out.println("Não é primo");	
+	  }
+	
+	//numero 5
+	numDivisores5 = 0;
+	System.out.print("Digite um numero: ");
+	numero5 = sc.nextInt();
+			
+	for (i = 1; i <= 10000; i++) {
+				
+	  if (numero5 % i == 0) {
+	  numDivisores5 = numDivisores5 + 1;
+		  } 
+	}//fim do for
+		
+	  if (numDivisores5 <= 2) {
+	  System.out.println("Primo");	
+	  }else {
+	  System.out.println("Não é primo");	
+	  }	
+
+    //numero 6
+	numDivisores6 = 0;
+	System.out.print("Digite um numero: ");
+	numero6 = sc.nextInt();
+		
+	for (i = 1; i <= 10000; i++) {
+				
+	  if (numero6 % i == 0) {
+	  numDivisores6 = numDivisores6 + 1;
+		  } 
+	}//fim do for
+		
+	  if (numDivisores6 <= 2) {
+	  System.out.println("Primo");	
+	  }else {
+	  System.out.println("Não é primo");	
+	  }	
+	  
+
+	//numero 7
+	numDivisores7 = 0;
+	System.out.print("Digite um numero: ");
+	numero7 = sc.nextInt();
+			
+	for (i = 1; i <= 10000; i++) {
+				
+	  if (numero7 % i == 0) {
+	  numDivisores7 = numDivisores7 + 1;
+		  } 
+	}//fim do for
+		
+	  if (numDivisores7 <= 2) {
+	  System.out.println("Primo");	
+	  }else {
+	  System.out.println("Não é primo");	
+	  }	
+	  
+	//numero 8
+		numDivisores8 = 0;
+		System.out.print("Digite um numero: ");
+		numero8 = sc.nextInt();
+				
+		for (i = 1; i <= 10000; i++) {
+					
+		  if (numero8 % i == 0) {
+		  numDivisores8 = numDivisores8 + 1;
+			  } 
+		}//fim do for
+			
+		  if (numDivisores8 <= 2) {
+		  System.out.println("Primo");	
+		  }else {
+		  System.out.println("Não é primo");	
+		  }		  
+	  
+	//numero 9
+		numDivisores9 = 0;
+		System.out.print("Digite um numero: ");
+		numero9 = sc.nextInt();
+				
+		for (i = 1; i <= 10000; i++) {
+					
+		  if (numero9 % i == 0) {
+		  numDivisores9 = numDivisores9 + 1;
+			  } 
+		}//fim do for
+			
+		  if (numDivisores9 <= 2) {
+		  System.out.println("Primo");	
+		  }else {
+		  System.out.println("Não é primo");	
+		  }	
+		  
+	//numero 10
+		numDivisores10 = 0;
+		System.out.print("Digite um numero: ");
+		numero10 = sc.nextInt();
+				
+		for (i = 1; i <= 10000; i++) {
+					
+		  if (numero10 % i == 0) {
+		  numDivisores10 = numDivisores10 + 1;
+			  } 
+		}//fim do for
+			
+		  if (numDivisores10 <= 2) {
+		  System.out.println("Primo");	
+		  }else {
+		  System.out.println("Não é primo");	
+		  }		  
+	
+    sc.close();
+	}
+
+}
