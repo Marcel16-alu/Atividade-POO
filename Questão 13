@@ -15,32 +15,32 @@ public class Questao13 {
   int idade;
   
     for (int i = 0; i == 15; i++) {
-     System.out.print("Digite a idade das 15 pessoas: " +i);
+     System.out.printIn("Digite a idade das 15 pessoas: " +i);
      i = sc.nextInt();
    } 
    for (double p = 0; p == 15; p++) {
-     System.out.print("Digite o peso das 15 pessoas: " +p);
+     System.out.printIn("Digite o peso das 15 pessoas: " +p);
      p = sc.nextDouble();
    }
    
     if (idade = 1 <=10) {
    mediafaixaetaria110 = peso + peso /peso;
-   System.out.print("A média de peso das pessoas na faixa etária de 1 a 10 anos é: " +mediafaixaetaria110);
+   System.out.printIn("A média de peso das pessoas na faixa etária de 1 a 10 anos é: " +mediafaixaetaria110);
    }
    
     else (idade =11 <=20) {
      mediafaixaetaria1120 = peso + peso /peso;
-     System.out.print("A média de peso das pessoas na faixa etária de 11 a 20 anos é: " +mediafaixaetaria1120);
+     System.out.printIn("A média de peso das pessoas na faixa etária de 11 a 20 anos é: " +mediafaixaetaria1120);
    }
    
    else if (idade =21 <=30) {
      mediafaxiaetaria1120 = peso + peso /peso;
-     System.out.print("A média de peso das pessoas na faixa etária de 21 a 30 anos é: " +mediafaixaetaria2130);
+     System.out.printIn("A média de peso das pessoas na faixa etária de 21 a 30 anos é: " +mediafaixaetaria2130);
    }
    
    else if (idade >=31) {
      mediafaixaetaria1120 = peso + peso /peso;
-     System.out.print("A média de peso das pessoas na faixa etária de 31 anos pra cima é: " +mediafaixaetaria31PC);
+     System.out.printIn("A média de peso das pessoas na faixa etária de 31 anos pra cima é: " +mediafaixaetaria31PC);
    }
    
    sc.close();
