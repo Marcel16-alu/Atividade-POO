@@ -1,0 +1,63 @@
+package resoluções;
+
+import java.util.Scanner;
+import java.util.Locale;
+
+public class MeusProjetos {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		Locale.setDefault(Locale.US);
+		
+		
+		int i, usuario, UsuarioI;
+		double MediaI, ContadorI, ContadorP, porcentagem, ContadorP2, MediaI2;
+		ContadorP2 = 0;
+		ContadorP = 0;
+		ContadorI = 0;
+		i = 1;
+
+		do {
+			
+			System.out.println(i + "º espectador, qual sua idade ?");
+			System.out.println();
+			System.out.println("Digite sua idade");
+			UsuarioI = sc.nextInt();
+			
+			System.out.println();
+			System.out.println("E sua opnião em relação ao filme ?");
+            System.out.println("Regular - 1");   
+            System.out.println("Bom - 2");
+            System.out.println("Ótimo - 3");
+            usuario = sc.nextInt();
+            
+            
+            if (usuario == 1) {
+            	ContadorP++;
+            } else if (usuario == 2) {
+            	ContadorP2++; 
+            } else if (usuario == 3) {
+			ContadorI = ContadorI + UsuarioI;
+            } 
+            
+            
+            
+            
+            
+		i++;	
+		} while (i >= 15);
+		
+		
+		MediaI = ContadorI / 15;
+		MediaI2 = (ContadorP2 * 100) / 15;
+		
+		System.out.println("A média das idades das pessoas que responderam ótimo é: " + MediaI);
+		System.out.println("A quantidade de pessoas que responderam regular é : " + ContadorP);
+		System.out.println("a percentagem de pessoas que responderam bom, entre todos os espectadores analisados é: " + MediaI2);
+		
+		
+		sc.close();
+	}
+
+}
